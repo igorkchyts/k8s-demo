@@ -1,0 +1,3 @@
+Kubernetes HPA scale down policy
+
+https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/
