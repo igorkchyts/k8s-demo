@@ -47,8 +47,8 @@ https://www.eksworkshop.com/beginner/070_healthchecks/livenessprobe/
 https://www.eksworkshop.com/beginner/180_fargate/prerequisites-for-alb/
 14. Deploy on Fargate Demo
 $ kubectl apply -f fargate/2048_full.yaml
-$ kubectl -n earnix-demo rollout status deployment deployment-2048
-$ kubectl get ingress/ingress-2048 -n earnix-demo
+$ kubectl -n demo rollout status deployment deployment-2048
+$ kubectl get ingress/ingress-2048 -n demo
 15. Deploy another customer on Fargate Demo 
 $ kubectl apply -f fargate/2048_full-2.yaml
 16. Rolling update Demo
