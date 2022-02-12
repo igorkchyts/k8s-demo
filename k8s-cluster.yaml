@@ -27,8 +27,6 @@ vpc:
 #     onDemandBaseCapacity: 0
 #     onDemandPercentageAboveBaseCapacity: 0
 #     spotInstancePools: 2
-#   ssh:
-#     publicKeyName: "IrDevProduct-2017"
 #   iam:
 #     withAddonPolicies:
 #       imageBuilder: true
@@ -57,8 +55,6 @@ managedNodeGroups:
   volumeSize: 25
   spot: true
   instanceTypes: ["t3.small", "t3.medium"] # At least one instance type should be specified
-  ssh:
-    publicKeyName: "IrDevProduct-2017"
   iam:
     withAddonPolicies:
       imageBuilder: true
@@ -78,7 +74,7 @@ managedNodeGroups:
 #     selectors:
 #       # All workloads in the "dev" Kubernetes namespace matching the following
 #       # label selectors will be scheduled onto Fargate:
-#       - namespace: earnix-demo
+#       - namespace: demo
 #         labels:
 #           env: dev
 #     tags:
@@ -88,7 +84,7 @@ managedNodeGroups:
 #     selectors:
 #       # All workloads in the "dev" Kubernetes namespace matching the following
 #       # label selectors will be scheduled onto Fargate:
-#       - namespace: earnix-demo-2
+#       - namespace: demo-2
 #         labels:
 #           env: dev
 #     tags:

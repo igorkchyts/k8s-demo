@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Namespace
 metadata:
-  name: earnix-demo
+  name: demo
   labels:
     env: dev
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: earnix-demo
+  namespace: demo
   name: deployment-2048
   labels:
     env: dev
@@ -38,7 +38,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: earnix-demo
+  namespace: demo
   name: service-2048
 spec:
   ports:
@@ -53,7 +53,7 @@ spec:
 apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
-  namespace: earnix-demo
+  namespace: demo
   name: ingress-2048
   annotations:
     kubernetes.io/ingress.class: alb
