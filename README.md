@@ -52,5 +52,6 @@ $ kubectl get ingress/ingress-2048 -n demo
 15. Deploy another customer on Fargate Demo 
 $ kubectl apply -f fargate/2048_full-2.yaml
 16. Rolling update Demo
+18. "Test"
 
 
