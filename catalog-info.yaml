@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-web
+  name: artist-web-2
   description: The place to be, for great artists
   labels:
     example.com/custom: custom_label_value
@@ -19,18 +19,3 @@ spec:
   lifecycle: production
   owner: artist-relations-team
   system: public-websites
----
-apiVersion: database.example.org/v1alpha1
-kind: PostgreSQLInstance
-metadata:
-  name: my-db
-  namespace: default
-spec:
-  parameters:
-    storageGB: 20
-  compositionSelector:
-    matchLabels:
-      provider: aws
-      vpc: default
-  writeConnectionSecretToRef:
-    name: db-conn
